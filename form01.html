@@ -12,18 +12,19 @@ Preencha os campos abaixo com suas informações.
 </header>
 <main>
 <form id="inscrição-jogos" action="/inscrições-jogos" method="post"enctype="multipart/form-data">
-<p>
-  <label for="nome-atleta">Nome completo do atleta (obrigatório)</label>
+   <fildset>
+     <legend>Identificação do atleta</legend>
+      <label for="nome-atleta">Nome completo do atleta (obrigatório)</label>
 <input type="text" id="nome-atleta" name="nome_atleta" required>
-</p>
-  <P>
-  <label for="email-atleta"> Email de contato (Obrigatório)</label>
+   </fildset>
+  <fildset>
+    <legend>Participação nos jogos</legend>
+      <label for="email-atleta"> Email de contato (Obrigatório)</label>
   <input type="email" id="email-atleta" name="email_atleta" required>
-  </p>
-  <p>
-    <label for="equipe">Nome da equipe</label>
+  </fildset>
+ 
+  <label for="equipe">Nome da equipe</label>
 <input type="text" id="equipe" name="equipe" value="Equipe Horizonte">
-</p>
 </form>
 </main>
 </body>
