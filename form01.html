@@ -37,7 +37,8 @@ Preencha os campos abaixo com suas informações.
      <option value="Escola Aurora">Escola Aurora</option>
       <option value="Escola Gomes">Escola Gomes</option>
       <option value="Escola Ferreira">Escola Ferreira</option>
-  </select>
+  </select><br></br>
+       
       <label for="turma">Turma</label>
   <select id="turma" name="turma" >
      <option value="1° Ano">1° Ano</option>
@@ -56,16 +57,17 @@ Preencha os campos abaixo com suas informações.
   </fieldset>
    <fieldset>
        <legend>3. Participação dos jogos</legend>
-
+<legend>Modalidade principal (obrigatória)</legend> 
+       <select id="selecione-um-tamanho" name="selecione-um-tamanho" 
+      
 <legend>Turno de preferência</legend>
 <input type="radio" id="turno-manha" name="turno" value="manha">
 <label for="turno-manha">Manhã</label>
 <input type="radio" id="turno-tarde" name="turno" value="tarde">
 <label for="turno-tarde">Tarde</label>
-</fieldset>
 
  <fieldset>
-<legend>Modalidades de interesse (permite várias escolhas)</legend>
+     <legend>Modalidades de interesse (permite várias escolhas)</legend>
     <input type="checkbox" id="interesse-futsal"
 name="modalidades" value="futsal">
 <label for="interesse-futsal">Futsal</label>
@@ -82,6 +84,14 @@ name="modalidades" value="handebol">
 name="modalidades" value="atletismo">
 <label for="interesse-atletismo">Atletismo</label>
 </fieldset>
+          <legende>Tamanho da camisa</legende>
+          <fieldset>
+             <legend>Participação em atividades complementares</legend>
+             <input type="checkbox" id="cerim-abert"
+name="cerimonia-abertura" value="cerim-abert">
+<label for="cerim-abert">Cerimônia de abertura</label>
+             
+          </fieldset>
    
 </form>
 </main>
