@@ -15,18 +15,18 @@ Preencha os campos abaixo com suas informações.
    <fieldset>
      <legend>1. Identificação do atleta</legend>
       <label for="nome-atleta">Nome completo do atleta (obrigatório)</label>
-<input type="text" id="nome-atleta" name="nome_atleta" required><br>
- <label for="nome-social">Nome social</label><br>
-      <input type="text" id="nome-social" name="nome_social" required><br>
-       <label for="nome-Matrícula">Matrícula (Obrigatório)</label><br>
-      <input type="text" id="nome-Matrícula" name="nome_Matrícula" required><br>
-        <label for="data-nascimento">Data de nascimento</label><br>
-      <input type="date" id="data-nasc" name="data_nascimento" required><br>
-      <label for="email-atleta"> Email de contato (Obrigatório)</label><br>
-  <input type="email" id="email-atleta" name="email_atleta" required><br>
-       <label for="telefone">Telefone de contato</label><br>
-  <input type="tel" id="telefone" name="telefone" required><br>
-       <label for="site-escola">Site da escola</label><br>
+<input type="text" id="nome-atleta" name="nome_atleta" required><br><br>
+ <label for="nome-social">Nome social</label>
+      <input type="text" id="nome-social" name="nome_social" required><br><br>
+       <label for="nome-Matrícula">Matrícula (Obrigatório)</label>
+      <input type="text" id="nome-Matrícula" name="nome_Matrícula" required><br><br>
+        <label for="data-nascimento">Data de nascimento</label>
+      <input type="date" id="data-nasc" name="data_nascimento" required><br><br>
+      <label for="email-atleta"> Email de contato (Obrigatório)</label>
+  <input type="email" id="email-atleta" name="email_atleta" required><br><br>
+       <label for="telefone">Telefone de contato</label>
+  <input type="tel" id="telefone" name="telefone" required><br><br>
+       <label for="site-escola">Site da escola</label>
   <input type="url" id="site-escole" name="site_escola" value="https://escola.exemplo">
    </fieldset>
    
@@ -37,13 +37,26 @@ Preencha os campos abaixo com suas informações.
      <option value="Escola Aurora">Escola Aurora</option>
       <option value="Escola Gomes">Escola Gomes</option>
       <option value="Escola Ferreira">Escola Ferreira</option>
+
+         <label for="turma">Turma</label><br>
+  <select id="turma" name="turma" >
+     <option value="1° Ano">1° Ano</option>
+      <option value="2° Ano">2° Ano</option>
+      <option value="3° Ano">3° Ano</option>
   </select><br></br>
-  </fieldset>
    
   <label for="equipe">Nome da equipe</label>
 <input type="text" id="equipe" name="equipe" value="Equipe Horizonte">
 
+      <label for="prof-resp">Professor responsável</label>
+  <input type="text" id="prof-resp" name="prof-resp" required><br><br>
+
+    <label for="tel-resp">Telefone do professor</label>
+  <input type="tel" id="tel-resp" name="tel-resp" required><br><br>
+  </fieldset>
    <fieldset>
+       <legend>3. Participação dos jogos</legend>
+
 <legend>Turno de preferência</legend>
 <input type="radio" id="turno-manha" name="turno" value="manha">
 <label for="turno-manha">Manhã</label>
@@ -51,14 +64,28 @@ Preencha os campos abaixo com suas informações.
 <label for="turno-tarde">Tarde</label>
 </fieldset>
 
-   <fieldset>
-<legend>Modalidades de interesse</legend>
-<input type="checkbox" id="interesse-futsal"
+ <fieldset>
+<legend>Modalidades de interesse (permite várias escolhas)</legend>
+    <input type="checkbox" id="interesse-futsal"
 name="modalidades" value="futsal">
 <label for="interesse-futsal">Futsal</label>
-<input type="checkbox" id="interesse-volei"
+    <input type="checkbox" id="interesse-volei"
 name="modalidades" value="voleibol">
 <label for="interesse-volei">Voleibol</label>
+    <input type="checkbox" id="interesse-basquetebol"
+name="modalidades" value="Basquetebol">
+<label for="interesse-Basquetebol">Basquetebol</label>
+   <input type="checkbox" id="interesse-handebol"
+name="modalidades" value="handebol">
+<label for="interesse-handebol">Handebol</label>
+    <input type="checkbox" id="interesse-atletismo"
+name="modalidades" value="atletismo">
+<label for="interesse-atletismo">Atletismo</label>
+    
+     
+     
+    
+    
 </fieldset>
    
 </form>
