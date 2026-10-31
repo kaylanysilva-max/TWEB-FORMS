@@ -57,7 +57,7 @@ Preencha os campos abaixo com suas informações.
   </fieldset>
    <fieldset>
        <legend>3. Participação dos jogos</legend>
-                <label for="modalidade_principal">Modalidade principal (obrigatória)</label><br>
+                <label for="modalidade_principal">Modalidade principal (obrigatória)</label>
                 <select id="modalidade_principal" name="modalidade_principal" required>
                     <option value="" disabled selected>Selecione uma modalidade</option>
                 </select>
@@ -78,7 +78,7 @@ Preencha os campos abaixo com suas informações.
                 <label><input type="checkbox" name="modalidades" value="xadrez"> Xadrez</label>
                 <label><input type="checkbox" name="modalidades" value="tenis_mesa"> Tênis de mesa</label>
             </fieldset>
-            <p>
+         
                 <label for="tamanho_camiseta">Tamanho da camiseta</label><br>
                 <select id="tamanho_camiseta" name="tamanho_camiseta">
                     <option value="" disabled selected>Selecione um tamanho</option>
@@ -87,59 +87,51 @@ Preencha os campos abaixo com suas informações.
                     <option value="G">G</option>
                     <option value="GG">GG</option>
                 </select>
-            </p>
+          
             <fieldset>
                 <legend>Participação em atividades complementares</legend>
                 <label><input type="checkbox" name="atividades" value="cerimonia" checked> Cerimônia de abertura</label><br>
                 <label><input type="checkbox" name="atividades" value="arbitragem"> Oficina de arbitragem</label><br>
                 <label><input type="checkbox" name="atividades" value="organizacao"> Organização das equipes</label>
             </fieldset>
-            <p>
+         
                 <label for="quantidade_acompanhantes">Quantidade de acompanhantes</label><br>
                 <input type="number" id="quantidade_acompanhantes" name="quantidade_acompanhantes" value="2">
-            </p>
+      
         </fieldset>
         <fieldset>
             <legend>4. Preparação e disponibilidade</legend>
-            <p>
+         
                 <label for="mes_inicio">Mês de início da preparação</label><br>
                 <input type="month" id="mes_inicio" name="mes_inicio">
-            </p>
-            <p>
+          
                 <label for="semana_treinamento">Semana de treinamento</label><br>
                 <input type="week" id="semana_treinamento" name="semana_treinamento">
-            </p>
-            <p>
+            
                 <label for="horario_chegada">Horário previsto de chegada</label><br>
                 <input type="time" id="horario_chegada" name="horario_chegada">
-            </p>
-            <p>
+        
                 <label for="data_hora_retirada">Data e hora local para retirada do kit</label><br>
                 <input type="datetime-local" id="data_hora_retirada" name="data_hora_retirada">
-            </p>
+         
         </fieldset>
         <fieldset>
             <legend>5. Preferências, anexo e observações</legend>
-            <p>
+           
                 <label for="cor_delegacao">Cor da delegação</label><br>
                 <input type="color" id="cor_delegacao" name="cor_delegacao" value="#0056b3">
-            </p>
-            <p>
-                <label for="interesse_atividades">Interesse nas atividades complementares, de 0 a 100</label><br>
+           
+                <label for="interesse_atividades">Interesse nas atividades complementares, de 0 a 100</label>
                 <input type="range" id="interesse_atividades" name="interesse_atividades" min="0" max="100">
-            </p>
-            <p>
+         
                 <label for="documento_ficticio">Documento fictício</label><br>
                 <input type="file" id="documento_ficticio" name="documento_ficticio">
-            </p>
-            <p>
+           
                 <label for="observacoes">Observações para a organização</label><br>
                 <textarea id="observacoes" name="observacoes" rows="4"></textarea>
-            </p>
+        
         </fieldset>
-        <p>
             <button type="submit">Enviar Inscrição</button>
-        </p>
     </form>
 </body>
 </html>
