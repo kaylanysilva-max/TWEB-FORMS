@@ -61,39 +61,94 @@ Preencha os campos abaixo com suas informações.
        <select id="selecione-um-tamanho" name="selecione-um-tamanho" 
       
 <legend>Turno de preferência</legend>
-<input type="radio" id="turno-manha" name="turno" value="manha">
-<label for="turno-manha">Manhã</label>
-<input type="radio" id="turno-tarde" name="turno" value="tarde">
-<label for="turno-tarde">Tarde</label>
-
- <fieldset>
-     <legend>Modalidades de interesse (permite várias escolhas)</legend>
-    <input type="checkbox" id="interesse-futsal"
-name="modalidades" value="futsal">
-<label for="interesse-futsal">Futsal</label>
-    <input type="checkbox" id="interesse-volei"
-name="modalidades" value="voleibol">
-<label for="interesse-volei">Voleibol</label>
-    <input type="checkbox" id="interesse-basquetebol"
-name="modalidades" value="Basquetebol">
-<label for="interesse-Basquetebol">Basquetebol</label>
-   <input type="checkbox" id="interesse-handebol"
-name="modalidades" value="handebol">
-<label for="interesse-handebol">Handebol</label>
-    <input type="checkbox" id="interesse-atletismo"
-name="modalidades" value="atletismo">
-<label for="interesse-atletismo">Atletismo</label>
-</fieldset>
-          <legende>Tamanho da camisa</legende>
-          <fieldset>
-             <legend>Participação em atividades complementares</legend>
-             <input type="checkbox" id="cerim-abert"
-name="cerimonia-abertura" value="cerim-abert">
-<label for="cerim-abert">Cerimônia de abertura</label>
-             
-          </fieldset>
-   
-</form>
-</main>
+<p>
+                <label for="modalidade_principal">Modalidade principal (obrigatória)</label><br>
+                <select id="modalidade_principal" name="modalidade_principal" required>
+                    <option value="" disabled selected>Selecione uma modalidade</option>
+                    <option value="futsal">Futsal</option>
+                    <option value="voleibol">Voleibol</option>
+                    <option value="basquetebol">Basquetebol</option>
+                </select>
+            </p>
+            <fieldset>
+                <legend>Turno de preferência</legend>
+                <label><input type="radio" name="turno" value="manha"> Manhã</label>
+                <label><input type="radio" name="turno" value="tarde"> Tarde</label>
+                <label><input type="radio" name="turno" value="noite"> Noite</label>
+            </fieldset>
+            <fieldset>
+                <legend>Modalidades de interesse (permite várias escolhas)</legend>
+                <label><input type="checkbox" name="modalidades" value="futsal"> Futsal</label>
+                <label><input type="checkbox" name="modalidades" value="voleibol"> Voleibol</label>
+                <label><input type="checkbox" name="modalidades" value="basquetebol"> Basquetebol</label>
+                <label><input type="checkbox" name="modalidades" value="handebol"> Handebol</label>
+                <label><input type="checkbox" name="modalidades" value="atletismo"> Atletismo</label>
+                <label><input type="checkbox" name="modalidades" value="natacao"> Natação</label>
+                <label><input type="checkbox" name="modalidades" value="xadrez"> Xadrez</label>
+                <label><input type="checkbox" name="modalidades" value="tenis_mesa"> Tênis de mesa</label>
+            </fieldset>
+            <p>
+                <label for="tamanho_camiseta">Tamanho da camiseta</label><br>
+                <select id="tamanho_camiseta" name="tamanho_camiseta">
+                    <option value="" disabled selected>Selecione um tamanho</option>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+            </p>
+            <fieldset>
+                <legend>Participação em atividades complementares</legend>
+                <label><input type="checkbox" name="atividades" value="cerimonia" checked> Cerimônia de abertura</label><br>
+                <label><input type="checkbox" name="atividades" value="arbitragem"> Oficina de arbitragem</label><br>
+                <label><input type="checkbox" name="atividades" value="organizacao"> Organização das equipes</label>
+            </fieldset>
+            <p>
+                <label for="quantidade_acompanhantes">Quantidade de acompanhantes</label><br>
+                <input type="number" id="quantidade_acompanhantes" name="quantidade_acompanhantes" value="2">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>4. Preparação e disponibilidade</legend>
+            <p>
+                <label for="mes_inicio">Mês de início da preparação</label><br>
+                <input type="month" id="mes_inicio" name="mes_inicio">
+            </p>
+            <p>
+                <label for="semana_treinamento">Semana de treinamento</label><br>
+                <input type="week" id="semana_treinamento" name="semana_treinamento">
+            </p>
+            <p>
+                <label for="horario_chegada">Horário previsto de chegada</label><br>
+                <input type="time" id="horario_chegada" name="horario_chegada">
+            </p>
+            <p>
+                <label for="data_hora_retirada">Data e hora local para retirada do kit</label><br>
+                <input type="datetime-local" id="data_hora_retirada" name="data_hora_retirada">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>5. Preferências, anexo e observações</legend>
+            <p>
+                <label for="cor_delegacao">Cor da delegação</label><br>
+                <input type="color" id="cor_delegacao" name="cor_delegacao" value="#0056b3">
+            </p>
+            <p>
+                <label for="interesse_atividades">Interesse nas atividades complementares, de 0 a 100</label><br>
+                <input type="range" id="interesse_atividades" name="interesse_atividades" min="0" max="100">
+            </p>
+            <p>
+                <label for="documento_ficticio">Documento fictício</label><br>
+                <input type="file" id="documento_ficticio" name="documento_ficticio">
+            </p>
+            <p>
+                <label for="observacoes">Observações para a organização</label><br>
+                <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <button type="submit">Enviar Inscrição</button>
+        </p>
+    </form>
 </body>
 </html>
