@@ -57,9 +57,13 @@ Preencha os campos abaixo com suas informações.
   </fieldset>
    <fieldset>
        <legend>3. Participação dos jogos</legend>
-<legend>Modalidade principal (obrigatória)</legend> 
-       <select id="selecione-um-tamanho" name="selecione-um-tamanho" 
-      
+                <label for="modalidade_principal">Modalidade principal (obrigatória)</label><br>
+                <select id="modalidade_principal" name="modalidade_principal" required>
+                    <option value="" disabled selected>Selecione uma modalidade</option>
+                    <option value="futsal">Futsal</option>
+                    <option value="voleibol">Voleibol</option>
+                    <option value="basquetebol">Basquetebol</option>
+                </select>
 <legend>Turno de preferência</legend>
 <p>
                 <label for="modalidade_principal">Modalidade principal (obrigatória)</label><br>
