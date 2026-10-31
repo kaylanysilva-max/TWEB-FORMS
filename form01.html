@@ -100,38 +100,47 @@ Preencha os campos abaixo com suas informações.
       
         </fieldset>
         <fieldset>
-            <legend>4. Preparação e disponibilidade</legend>
-         
+          <legend>4. Preparação e disponibilidade</legend>
+            <p>
                 <label for="mes_inicio">Mês de início da preparação</label><br>
                 <input type="month" id="mes_inicio" name="mes_inicio">
-          
+            </p>
+            <p>
                 <label for="semana_treinamento">Semana de treinamento</label><br>
                 <input type="week" id="semana_treinamento" name="semana_treinamento">
-            
+            </p>
+            <p>
                 <label for="horario_chegada">Horário previsto de chegada</label><br>
                 <input type="time" id="horario_chegada" name="horario_chegada">
-        
+            </p>
+            <p>
                 <label for="data_hora_retirada">Data e hora local para retirada do kit</label><br>
                 <input type="datetime-local" id="data_hora_retirada" name="data_hora_retirada">
-         
+            </p>
         </fieldset>
+
         <fieldset>
             <legend>5. Preferências, anexo e observações</legend>
-           
-                <label for="cor_delegacao">Cor da delegação</label><br><br>
+            <p>
+                <label for="cor_delegacao">Cor da delegação</label><br>
                 <input type="color" id="cor_delegacao" name="cor_delegacao" value="#0056b3">
-           
-                <label for="interesse_atividades">Interesse nas atividades complementares, de 0 a 100</label><br><br>
+            </p>
+            <p>
+                <label for="interesse_atividades">Interesse nas atividades complementares, de 0 a 100</label><br>
                 <input type="range" id="interesse_atividades" name="interesse_atividades" min="0" max="100">
-         
-                <label for="documento_ficticio">Documento fictício</label><br><br>
+            </p>
+            <p>
+                <label for="documento_ficticio">Documento fictício</label><br>
                 <input type="file" id="documento_ficticio" name="documento_ficticio">
-           
-                <label for="observacoes">Observações para a organização.</label><br><br>
+            </p>
+            <p>
+                <label for="observacoes">Observações para a organização</label><br>
                 <textarea id="observacoes" name="observacoes" rows="4"></textarea>
-        
+            </p>
         </fieldset>
+        <p>
             <button type="submit">Enviar Inscrição</button>
+        </p>
     </form>
 </body>
 </html>
